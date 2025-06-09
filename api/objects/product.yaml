@@ -1,0 +1,20 @@
+type: object
+properties:
+  id:
+    type: string
+    description: The unique identifier of the product
+    example: "12345"
+  name:
+    type: string
+    description: The name of the product
+    example: "Example Product"
+  price:
+    type: number
+    format: float
+    description: The price of the product
+    example: 19.99
+  inStock:
+    type: boolean
+    description: Indicates if the product is in stock
+    example: true
+ 

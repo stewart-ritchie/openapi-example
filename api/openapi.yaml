@@ -1,0 +1,32 @@
+openapi: 3.1.0
+
+info:
+  title: Example API
+  version: 1.0.0
+
+paths:
+  /product/{productId}:
+    get:
+      description: Returns product based on id
+      summary: Get a product by id
+      operationId: getProductById
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: './objects/product.yaml'
+    parameters:
+      - name: productId
+        in: path
+        required: true
+        description: The id of the product to retrieve
+        schema:
+          type: string
+          example: "12345"
+
+# components:
+#   schemas:
+#     Product:
+#       $ref: './objects/product.yaml'
