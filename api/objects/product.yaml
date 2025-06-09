@@ -2,7 +2,7 @@ type: object
 properties:
   id:
     type: string
-    description: The unique identifier of the product
+    description: The unique identifier of the product hek
     example: "12345"
   name:
     type: string

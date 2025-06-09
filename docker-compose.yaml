@@ -7,7 +7,7 @@ services:
     volumes:
       - ./api:/api:ro
     environment:
-      SWAGGER_JSON: https://stoplight.io/open-source/prism
+      SWAGGER_JSON: /api/openapi.yaml
 
   prism:
     image: stoplight/prism:4
